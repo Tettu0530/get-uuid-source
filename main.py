@@ -1,4 +1,8 @@
 import subprocess
+import os
+import sys
+if os.name != "nt":
+    sys.exit()
 
 command = "wmic csproduct get uuid"
 
